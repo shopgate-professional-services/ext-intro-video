@@ -2,6 +2,7 @@ import { appDidStart$ } from '@shopgate/pwa-common/streams/app';
 import showModal from '@shopgate/pwa-common/actions/modal/showModal';
 import { historyReplace} from '@shopgate/pwa-common/actions/router';
 import { PATH_INTRO_VIDEO } from '../constants';
+import { texts } from '../config'
 
 /**
  * Intro video subscriptions
@@ -21,10 +22,10 @@ export default function introVideo(subscribe) {
 
     window.localStorage.setItem(LOCAL_STORAGE_KEY, true);
     const skipIt = await dispatch(showModal({
-      title: 'Harbor Freight App Features', // TODO:
-      message: 'Learn about new app features',
-      confirm: 'Skip',
-      dismiss: 'Watch',
+      title: texts.title,
+      message: texts.message,
+      confirm: texts.dismiss, // swap confirm and dismiss here because of special Client request for button order
+      dismiss: texts.confirm,
     }));
 
     if (skipIt) {
