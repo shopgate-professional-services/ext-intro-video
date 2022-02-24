@@ -34,7 +34,7 @@
       "default": {
         "title": "Harbor Freight App Features",
         "message": "Learn about new app features",
-        "confirm": "Watch",
+        "confirm": "Show",
         "dismiss": "Skip"
       },
       "params": {
