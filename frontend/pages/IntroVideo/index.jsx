@@ -31,7 +31,7 @@ const ItcLoginPage = () => {
     <View>
       <AppBar title={texts.title} />
       <div className={styles.page}>
-        <video className={styles.video} playsInline controls autoPlay muted loop poster={videoSrc.cover}>
+        <video className={styles.video} playsInline controls autoPlay muted poster={videoSrc.cover}>
           <source type="video/mp4" src={videoSrc.mp4} />
           <source type="video/webm" src={videoSrc.cover} />
         </video>
