@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "id": "@shopgate-project/intro-video",
+  "components": [
+    {
+      "id": "subscriptions",
+      "path": "frontend/subscriptions/index.js",
+      "type": "subscribers"
+    },
+    {
+      "id": "IntroVideo",
+      "path": "frontend/pages/IntroVideo",
+      "target": "app.routes",
+      "type": "portals"
+    }
+  ],
+  "configuration": {
+    "videoSrc": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": {
+        "cover": "",
+        "mp4": "",
+        "webm": ""
+      },
+      "params": {
+        "type": "json",
+        "label": "videoSrc"
+      }
+    },
+    "texts": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": {
+        "title": "App Features",
+        "message": "Learn about new app features",
+        "confirm": "Show",
+        "dismiss": "Skip"
+      },
+      "params": {
+        "type": "json",
+        "label": "Texts for Popup"
+      }
+    }
+  }
+}
