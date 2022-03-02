@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "id": "@shopgate-project/intro-video",
   "components": [
     {
@@ -19,9 +19,9 @@
       "type": "admin",
       "destination": "frontend",
       "default": {
-        "cover": "https://images.unsplash.com/photo-1620222071550-a5c7f8b600ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDY4NDIyNA&ixlib=rb-1.2.1&q=80&w=400",
-        "mp4": "https://data.shopgate.com/ps/hft/HFT-App-Tutorial-Video.mp4",
-        "webm": "https://data.shopgate.com/ps/hft/HFT-App-Tutorial-Video.webm"
+        "cover": "",
+        "mp4": "",
+        "webm": ""
       },
       "params": {
         "type": "json",
@@ -32,14 +32,14 @@
       "type": "admin",
       "destination": "frontend",
       "default": {
-        "title": "Harbor Freight App Features",
+        "title": "App Features",
         "message": "Learn about new app features",
         "confirm": "Show",
         "dismiss": "Skip"
       },
       "params": {
         "type": "json",
-        "label": "videoSrc"
+        "label": "Texts for Popup"
       }
     }
   }
