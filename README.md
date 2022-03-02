@@ -2,7 +2,7 @@
 
 [![GitHub license](http://dmlc.github.io/img/apache2.svg)](LICENSE)
 
-Shows an intro video on first app start
+Shows a popup on first app start with the option to watch a video.
 
 ## Configuration
 
@@ -12,6 +12,12 @@ Set the following values in your Shopgate Connect Admin:
     * `cover` (url) Url of the cover image that shows up as a preview while the video is downloading
     * `mp4` (url) Url of the video in mp4 format
     * `webm` (url) Url of the video in webm format
+
+* `texts` - (object) Configuration of texts
+    * `title` (string) Title of the Popup and the video page
+    * `message` (string) Message of th Popup
+    * `confirm` (string) Text of the confirm button in Popup
+    * `dismiss` (string) Text of the dismiss button in Popup
 
 ## Changelog
 
