@@ -24,7 +24,7 @@ const styles = {
 /**
  * @returns {JSX}
  */
-const ItcLoginPage = () => {
+const IntroVideo = () => {
   const { View, AppBar } = useTheme();
 
   return (
@@ -33,7 +33,7 @@ const ItcLoginPage = () => {
       <div className={styles.page}>
         <video className={styles.video} playsInline controls autoPlay muted poster={videoSrc.cover}>
           <source type="video/mp4" src={videoSrc.mp4} />
-          <source type="video/webm" src={videoSrc.cover} />
+          <source type="video/webm" src={videoSrc.webm} />
         </video>
       </div>
     </View>
@@ -43,6 +43,6 @@ const ItcLoginPage = () => {
 export default () => (
   <Route
     pattern={PATH_INTRO_VIDEO}
-    component={ItcLoginPage}
+    component={IntroVideo}
   />
 );

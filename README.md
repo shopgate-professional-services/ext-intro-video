@@ -8,6 +8,8 @@ Shows a popup on first app start with the option to watch a video.
 
 Set the following values in your Shopgate Connect Admin:
 
+* `enabled` - (boolean) enable/disable the feature
+
 * `videoSrc` - (object) Configuration of the video
     * `cover` (url) Url of the cover image that shows up as a preview while the video is downloading
     * `mp4` (url) Url of the video in mp4 format
